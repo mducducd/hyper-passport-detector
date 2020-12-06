@@ -1,0 +1,19 @@
+tensorflow==2.2
+Keras==2.4.3
+-U albumentations>=0.3.0 --user 
+-U --pre segmentation-models --user
+
+pytesseract
+easydict
+
+
+matplotlib==3.3.3
+scikit-image
+opencv-python==4.1.1.26
+lxml
+tqdm
+absl-py
+
+easydict
+pillow
+pytesseract

@@ -2,4 +2,3 @@ checkpoints
 images
 detections
 __pycache__
-data/yolov4.weights

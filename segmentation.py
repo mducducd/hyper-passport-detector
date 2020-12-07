@@ -2,15 +2,6 @@ from lib import *
 from transform import *
 
 
-# def load(image):
-# #    filename = os.path.join(filename, name) 
-# #    np_image = Image.open(filename)
-# #    np_image = cv2.imread(filename)
-#    np_image = np.array(image).astype('float32')/255
-#    np_image = transform.resize(np_image, (352, 480, 3))
-# #    np_image = cv2.resize(np_image, (480, 352))
-#    np_image = np.expand_dims(np_image, axis=0)
-#    return np_image
 
 def segment(np_image):
     size = np_image.shape
@@ -53,7 +44,7 @@ def segment(np_image):
     img = img.resize(file_size)
     # PIL_image = Image.fromarray(np.uint8(img)).convert('RGB')
     # mask = cv2.cvtColor(np.array(mask), cv2.COLOR_RGB2BGR)
-    img.save('./images/mask.png')
+    #img.save('./images/mask.png')
     img = np.array(img)
     return img
 

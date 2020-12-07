@@ -117,6 +117,9 @@ def detect(image_path):
     # custom allowed classes (uncomment line below to allow detections for only people)
     #allowed_classes = ['person']
 
+    if not os.path.exists('detections'):
+        os.makedirs('detections/crop')    
+    
     # if crop flag is enabled, crop each detection and save it as new image
     if crop==False:
         crop_path = os.path.join(os.getcwd(), 'detections', 'crop', image_name)

@@ -5,15 +5,15 @@ Download checkpoints: https://drive.google.com/drive/folders/10UaF28w80VC-lARfCA
 Folders Structure
 
 hyper-passport-detector
-  core
-  data
-  checkpoints
-  images
-  detections
-    crop
-  segmentation.py
-  transform.py
-  detect.py
+  - core
+  - data
+  - checkpoints
+  - images
+  - detections
+    - crop
+  - segmentation.py
+  - transform.py
+  - detect.py
 
 
 

@@ -8,7 +8,6 @@ hyper-passport-detector
   - core
   - data
   - checkpoints
-  - images
   - detections
     - crop
   - segmentation.py

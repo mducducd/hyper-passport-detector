@@ -140,7 +140,7 @@ def perspective_transform(img_OG, mask):
     else:
         result = warped
     cv2.imwrite('result.png',result)
-    
+    result = cv2.cvtColor(result, cv2.COLOR_BGR2RGB)
     result = true_rotate(result)
     
 

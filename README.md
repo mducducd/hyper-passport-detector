@@ -17,3 +17,15 @@ var routes = (
     <Route name="detect.py"></Route>
   </Route>
 );
+
+var routes = (
+  <Route name="App">
+    <Route name="Admin">
+      <Route name="Users"/>
+      <Route name="Reports"/>
+    </Route>
+    <Route name="Course">
+      <Route name="Assignments"/>
+    </Route>
+  </Route>
+);

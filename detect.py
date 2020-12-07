@@ -21,6 +21,7 @@ from segmentation import *
 from transform import *
 
 import argparse
+import timeit
 
 parser = argparse.ArgumentParser(description='Passport dedector')
 parser.add_argument('images', type=str,default='ho-chieu-passport-tre-em.jpg')
@@ -31,6 +32,8 @@ args = parser.parse_args()
 
 
 def detect(image_path):
+    start = timeit.default_timer()
+    
     config = ConfigProto()
     config.gpu_options.allow_growth = True
     session = InteractiveSession(config=config)
@@ -146,6 +149,10 @@ def detect(image_path):
         image.show()
     image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
     cv2.imwrite('detections/result.png', image)
+    
+    stop = timeit.default_timer()
+
+    print('Time: ', stop - start)
 
 if __name__ == '__main__':
 

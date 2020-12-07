@@ -17,8 +17,8 @@ import numpy as np
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
 
-from segmentation import *
-from transform import *
+from segmentation import segment
+from transform import perspective_transform
 
 import argparse
 import timeit
